@@ -51,7 +51,14 @@
                 </button>
             </div>
 
-            
+            <form action="{{ url()->current() }}" method="GET" class="mb-3">
+                <div class="input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                    <input type="text" name="q" value="{{ request('q') }}" class="form-control"
+                           placeholder="Cari nama, email, NIM/NIP, atau tipe akun...">
+                    <button class="btn btn-outline-primary" type="submit">Cari</button>
+                </div>
+            </form>
 
             <div class="card">
                 <div class="table-responsive">
@@ -122,7 +129,7 @@
             </div>
         </div>
     </div>
-
+    
     @include('akun.modal.tambah')
     @include('akun.modal.edit')
     @include('akun.modal.detail')
