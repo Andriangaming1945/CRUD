@@ -139,14 +139,9 @@
             </li>
             
         </ul>
-        <div class="topbar" style="margin-top: 400px; padding: 1rem;">
-            <form action="{{ route('logout') }}" method="POST">
-                @csrf
-                <button type="submit" class="btn btn-outline-danger" style="width: 200px">
-                    <i class="bi bi-box-arrow-right me-1"></i>Logout
-                </button>
-            </form>
-        </div>
+           
+
+        
        
     </aside>
   

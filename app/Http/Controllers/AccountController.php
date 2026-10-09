@@ -17,7 +17,7 @@ class AccountController extends Controller
         $accounts = User::with('accountType')->latest('created_at')->get();
         $types = AccountType::orderBy('name')->get();
 
-        return view('dashboard', compact('accounts', 'types'));
+       return view('dashboard', compact('accounts', 'types'));
     }
 
     /**
